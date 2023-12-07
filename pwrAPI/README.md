@@ -5,7 +5,7 @@ List of files {\
 	makefile\
 	pwrtypes.h (error codes, return types, attribute types, roles)\
 	variorum-powerapi.h (main header file)\
-}\
+}
 
 This implementation is based on the PowerAPI Specification V1.0
 
@@ -47,7 +47,7 @@ PWR_ObjAttrGetValue:\
 	Memory: Power (for the node)\
 	Socket: Power (socket level power consumption including CPU, Memory, GPU - associated with socket)\
 PWR_ObjAttrSetValue:\
-	Node-level: Power (set power limit for node)\
+	Node-level: Power (set power limit for node)
 
 
 
