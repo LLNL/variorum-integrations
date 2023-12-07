@@ -30,7 +30,7 @@ obj.type = PWR_OBJ_NODE;\
 PWR_Time now;\
 double value = 0;\
 PWR_AttrName type = PWR_ATTR_POWER;\
-int ret = PWR_ObjAttrGetValue(&obj, type, &value, &now);\
+int ret = PWR_ObjAttrGetValue(&obj, type, &value, &now);
 
 We first create a generic object of type Object, which is then assigned the type that we are interested
 in. This type defines the domain of interest. (ie. Node, Socket, Memory, GPU etc.) We then create values 
