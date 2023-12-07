@@ -1,11 +1,11 @@
 PowerAPI Implementation for variorum
 
-List of files {
-	dummy.c (examples)
-	makefile
-	pwrtypes.h (error codes, return types, attribute types, roles)
-	variorum-powerapi.h (main header file)
-}
+List of files {\
+	dummy.c (examples)\
+	makefile\
+	pwrtypes.h (error codes, return types, attribute types, roles)\
+	variorum-powerapi.h (main header file)\
+}\
 
 This implementation is based on the PowerAPI Specification V1.0
 
@@ -25,12 +25,12 @@ Variorum API functions for the supported PowerAPI functions.
 
 An example file called dummy.c is included.
 
-Object obj;
-obj.type = PWR_OBJ_NODE;
-PWR_Time now;
-double value = 0;
-PWR_AttrName type = PWR_ATTR_POWER;
-int ret = PWR_ObjAttrGetValue(&obj, type, &value, &now);
+Object obj;\
+obj.type = PWR_OBJ_NODE;\
+PWR_Time now;\
+double value = 0;\
+PWR_AttrName type = PWR_ATTR_POWER;\
+int ret = PWR_ObjAttrGetValue(&obj, type, &value, &now);\
 
 We first create a generic object of type Object, which is then assigned the type that we are interested
 in. This type defines the domain of interest. (ie. Node, Socket, Memory, GPU etc.) We then create values 
@@ -42,12 +42,12 @@ choice.
 
 Currently we support the following types for 
 
-PWR_ObjAttrGetValue:
-	Node-level: Power, Lower bound power limit, Upper bound power limit
-	Memory: Power (for the node)
-	Socket: Power (socket level power consumption including CPU, Memory, GPU - associated with socket)
-PWR_ObjAttrSetValue:
-	Node-level: Power (set power limit for node)
+PWR_ObjAttrGetValue:\
+	Node-level: Power, Lower bound power limit, Upper bound power limit\
+	Memory: Power (for the node)\
+	Socket: Power (socket level power consumption including CPU, Memory, GPU - associated with socket)\
+PWR_ObjAttrSetValue:\
+	Node-level: Power (set power limit for node)\
 
 
 
