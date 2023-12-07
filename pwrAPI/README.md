@@ -1,10 +1,10 @@
 PowerAPI Implementation for variorum
 
 List of files {\
-	dummy.c (examples)\
-	makefile\
-	pwrtypes.h (error codes, return types, attribute types, roles)\
-	variorum-powerapi.h (main header file)\
+&emsp;dummy.c (examples)\
+&emsp;makefile\
+&emsp;pwrtypes.h (error codes, return types, attribute types, roles)\
+&emsp;variorum-powerapi.h (main header file)\
 }
 
 This implementation is based on the PowerAPI Specification V1.0
@@ -43,11 +43,11 @@ choice.
 Currently we support the following types for 
 
 PWR_ObjAttrGetValue:\
-	Node-level: Power, Lower bound power limit, Upper bound power limit\
-	Memory: Power (for the node)\
-	Socket: Power (socket level power consumption including CPU, Memory, GPU - associated with socket)\
+&emsp;Node-level: Power, Lower bound power limit, Upper bound power limit\
+&emsp;Memory: Power (for the node)\
+&emsp;Socket: Power (socket level power consumption including CPU, Memory, GPU - associated with socket)\
 PWR_ObjAttrSetValue:\
-	Node-level: Power (set power limit for node)
+&emsp;Node-level: Power (set power limit for node)
 
 
 
