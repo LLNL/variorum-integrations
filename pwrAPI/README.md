@@ -34,8 +34,8 @@ int ret = PWR_ObjAttrGetValue(&obj, type, &value, &now);
 
 We first create a generic object of type Object, which is then assigned the type that we are interested
 in. This type defines the domain of interest. (ie. Node, Socket, Memory, GPU etc.) We then create values 
-for PWR_Time, value, and PWR_AttrName (the type of attribute we are interested in for the domain of 
--interest, ie PWR_ATTR_POWER for power). Finally we pass the Object by refernce, attribute type by value,
+for PWR_Time, value, and PWR_AttrName (the type of attribute we are interested in for the domain of interest, 
+ie PWR_ATTR_POWER for power). Finally we pass the Object by reference, attribute type by value,
 the return value and PWR_Time by reference. The user recieves the relevant return values in the function 
 arguments passed by refernce. This method of interaction is defined by the PowerAPI spec and not a design 
 choice.
