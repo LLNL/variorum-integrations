@@ -37,7 +37,7 @@ in. This type defines the domain of interest. (ie. Node, Socket, Memory, GPU etc
 for PWR_Time, value, and PWR_AttrName (the type of attribute we are interested in for the domain of interest, 
 ie PWR_ATTR_POWER for power). Finally we pass the Object by reference, attribute type by value,
 the return value and PWR_Time by reference. The user recieves the relevant return values in the function 
-arguments passed by refernce. This method of interaction is defined by the PowerAPI spec and not a design 
+arguments passed by reference. This method of interaction is defined by the PowerAPI spec and not a design 
 choice.
 
 Currently we support the following types for 
